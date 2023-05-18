@@ -1,6 +1,9 @@
 const gql = require("graphql-tag")
 
 const typeDefs = gql`
+type Query{
+    tracksForHome:[Tracks!]!
+}
 "A track is group of module that teaches specific topic"
 type Tracks{
     "Track's ID"
@@ -14,7 +17,7 @@ type Tracks{
     "Length Of the course"
     length: Int
     "Number of modules"
-    modulesClount: Int
+    modulesCount: Int
 }
 
 "Defines the author"
@@ -29,4 +32,4 @@ type Author {
 `
 
 
-module.export=typeDefs
+module.exports=typeDefs
