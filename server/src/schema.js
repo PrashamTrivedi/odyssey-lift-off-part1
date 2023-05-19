@@ -1,11 +1,12 @@
 const gql = require("graphql-tag")
 
 const typeDefs = gql`
-type Query{
-    tracksForHome:[Tracks!]!
+type Query {
+    tracksForHome: [Track!]!
 }
+
 "A track is group of module that teaches specific topic"
-type Tracks{
+type Track {
     "Track's ID"
     id: ID!
     "Track's Title"
@@ -13,7 +14,7 @@ type Tracks{
     "Track's Author"
     author: Author! 
     "Image URL of Track's Thumbnail"
-    thumbnail:String!
+    thumbnail:String
     "Length Of the course"
     length: Int
     "Number of modules"
