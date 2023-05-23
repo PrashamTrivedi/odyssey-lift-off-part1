@@ -4,7 +4,8 @@ import { useQuery, gql } from "@apollo/client";
 
 
 const TRACKS = gql`
-tracksForHome {
+query GetTracks {
+  tracksForHome {
     id
     title
     modulesCount
@@ -16,6 +17,7 @@ tracksForHome {
       photoURL
     }
   }
+}
 `
 
 

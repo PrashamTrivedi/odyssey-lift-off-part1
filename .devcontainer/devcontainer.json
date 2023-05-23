@@ -30,10 +30,15 @@
         },
         "4000": {
             "label": "GraphQL",
-            "onAutoForward": "openBrowserOnce"
+            "onAutoForward": "openBrowserOnce",
+
         }
     }
-    ]
+    // "postStartCommand": {
+    //     "server":"cd server && npm install && npm run start",
+    //     "client":"cd client && npm install && npm run start"
+    // }
+
 	// Features to add to the dev container. More info: https://containers.dev/features.
 	// "features": {},
 
